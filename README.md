@@ -10,9 +10,9 @@
 
 | Requirement | Version |
 |---|---|
-| Java | 17+ |
+| Java | 11+ (17 empfohlen) |
 | Maven | 3.8+ |
-| Apache Tomcat | 10.1.x |
+| Apache Tomcat | 9.0.x |
 
 ---
 
@@ -156,7 +156,7 @@ curl -X POST http://localhost:8080/demo/api/deserialize \
 | **Package CVE** | `jackson-databind` 2.13.0 — CVE-2022-42003, CVE-2022-42004 | `pom.xml` |
 | **Package CVE** | `snakeyaml` 1.29 — CVE-2022-25857, CVE-2022-38750 | `pom.xml` |
 | **Package CVE** | `commons-text` 1.9 — CVE-2022-42889 (Text4Shell) | `pom.xml` |
-| **Package CVE** | `tomcat-embed-core` 10.1.0-M6 — multiple CVEs | `pom.xml` |
+| **Package CVE** | `tomcat-embed-core` 9.0.62 — multiple CVEs | `pom.xml` |
 | **Exposure / SAST** | XXE — `DocumentBuilderFactory` without secure features | `XmlController.java` |
 | **Exposure / SAST** | SSRF — `new URL(url).openStream()` without host validation | `SsrfController.java` |
 | **Exposure / SAST** | Command Injection — `Runtime.exec()` with unsanitized input | `CommandController.java` |
